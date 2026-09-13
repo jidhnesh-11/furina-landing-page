@@ -1,5 +1,8 @@
 
-
+body {
+  margin: 0;
+  
+}
 
 .section {
   min-height: 100vh;
@@ -8,7 +11,7 @@
   justify-content: center;
   padding: 6rem 2rem;
   scroll-snap-align: start;
-  font-family:'Courier New', Courier, monospace;
+  
 }
 
 
@@ -138,7 +141,7 @@
 }
 
 .about h2 {
-  font-size: clamp(4.4rem, 3vw, 1rem);
+  font-size: clamp(1.5rem, 3vw, 4.4rem);
   font-weight: 300;
   margin: 0 0 1.5rem;
   letter-spacing: -0.02em;
@@ -150,7 +153,7 @@
   font-size: 1rem;
   line-height: 1.1;
   opacity: 0.5;
-  margin: 0 0.1 1rem;
+  margin: 0 0 1rem;
   font-family:'Courier New', Courier, monospace;
 }
 
@@ -167,7 +170,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  border-radius: 80%;
+  border-radius: 50%;
   filter: blur(80px);
   opacity: 0.35;
   pointer-events: none;
@@ -186,4 +189,75 @@
   background: radial-gradient(circle, #b48cff 0%, transparent 70%);
 }
 
+.masquerade {
+  background: linear-gradient(to bottom,#091540, rgba(0,0,0,0.7));
+  color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
 
+.quote{
+
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.quote::before{
+
+content: "“";
+position: absolute;
+top: -4rem;
+left: -1rem;
+font-size: 15em;
+font-family: Georgia, serif;
+color: #F5F5F5;
+line-height: 1;
+pointer-events: none;
+z-index: 0;
+
+}
+
+.quote::after {
+  content: "”";
+  position: absolute;
+  bottom: -10rem;
+  right: -1rem;
+  font-size: 15em;
+  font-family: Georgia, serif;
+  color: #F5F5F5;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.quote-text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-wrap: balance; 
+       
+  
+}
+
+.quote-text em {
+  font-style: normal;      
+  
+  color: #b48cff;          
+}
+
+.quote-attr {
+  position: relative;
+  z-index: 1;
+  margin: 2rem 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  
+}
