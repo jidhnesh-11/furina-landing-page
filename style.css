@@ -1,4 +1,4 @@
-
+/* * { outline: 1px solid red;}*/
 
 body {
   margin: 0;
@@ -21,7 +21,7 @@ body {
   height: 100vh;
   overflow: hidden;
   color: #F7F8F0;
-  font-family: 'Franklin Gothic', system-ui, sans-serif;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .hero-video {
@@ -61,29 +61,29 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
-  opacity: 0.5;
-  letter-spacing: 0.4em;
-  font-size: 1rem;
+  opacity: 0.3;
+  letter-spacing: 0.7em;
+  font-size: 7rem;
 }
 
 .bottom-left h1 {
   margin: 0;
-  font-size: 4rem;
+  font-size: 9rem;
   font-weight: 300;
   letter-spacing: -0.02em;
 }
 
 .bottom-left p {
   margin: 0.5rem 0 0;
-  font-size: 1.1rem;
+  font-size: 10rem;
   letter-spacing: 0.05em;
   opacity: 0.8;
   color: #EBF4F6;
 }
 
 .top-left, .top-right, .bottom-right {
-  font-size: 0.85rem;
-  letter-spacing: 0.3em;
+  font-size: 9rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 
@@ -91,17 +91,23 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  max-width: 700px;
-  font-size: 1rem;
+  
+  max-width: 1500px;
+  font-size: 3rem;
   line-height: 1.7;
 }
 
+.left-center p {
+
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
 .hero-title {
   display: block;
-  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  font-size: clamp(1rem, 4.5vw, 7.3rem);
   color: #EBF4F6;
   font-family: 'Courier New', monospace;
-  margin-bottom: 1.5rem;
+  margin-bottom: 7.5rem;
   line-height: 1.1;
 }
 
@@ -119,7 +125,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4rem;
-  max-width: 1200px;
+  max-width: 2500px;
   width: 100%;
 }
 
@@ -180,20 +186,4 @@ body {
   bottom: -200px;
   left: -150px;
   background: radial-gradient(circle, #b48cff 0%, transparent 70%);
-}
-
-.watermark {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: clamp(6rem, 18vw, 16rem);
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  opacity: 0.04;
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
 }
