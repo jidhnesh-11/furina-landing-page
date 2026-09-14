@@ -408,3 +408,50 @@ z-index: 0;
   transform: translateY(-10px);
   border-color: #b48cff;
 }
+
+.footer{
+
+  position: relative;
+  overflow: hidden;
+  background: #060607;
+  padding: 6rem 2rem 2rem;
+  font-family:'Courier New',monospace ;
+}
+
+.footer-inner{
+
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+
+}
+
+.credits{
+
+  color: #EBF4F6;
+  max-width: 380px;
+}
+
+.footer-peek {
+  position: absolute;
+  left: -80px;          /* push her partly off-screen right */
+  top: 65%;
+  transform: translateY(-50%);   /* vertically center */
+  width: 420px;
+  opacity: 0.5;         /* quiet, so cards stay readable */
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.footer-peek img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
